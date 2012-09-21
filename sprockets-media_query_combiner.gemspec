@@ -4,8 +4,8 @@ require File.expand_path('../lib/sprockets/media_query_combiner/version', __FILE
 Gem::Specification.new do |gem|
   gem.authors       = ["Aaron Jensen"]
   gem.email         = ["aaronjensen@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.summary       = %q{Automatically combine media queries}
+  gem.description   = %q{Sprockets bundle processor to combine all like media queries}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
