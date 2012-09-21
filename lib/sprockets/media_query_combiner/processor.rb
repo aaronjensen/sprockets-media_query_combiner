@@ -8,11 +8,17 @@ module Sprockets
 
       def evaluate(context, locals, &block)
         queries = Hash.new { |hash, key| hash[key] = '' }
-        filtered_data = data.gsub(/@media(?<query>[^{]+){(?<body>(?<braces>(?:[^{}]+)|({\g<braces>}))*)}\n?/m) do |match|
-          queries[$1.strip] << $2.strip; ''
+        pretty = true
+
+        filtered_data = data.gsub(/(?<query>\n?@media[^{]+){(?<body>(?<braces>(?:[^{}]+)|({\g<braces>}))*)}\n?/m) do |match|
+          queries[$1] << $2
+          pretty &&= /\n$/m === match
+          ''
         end
 
-        "#{filtered_data}#{queries.map { |query, body| "@media #{query}{#{body}}" }.join}\n"
+        combined = queries.map { |query, body| "#{query}{#{body}}" }.
+          join(("\n" if pretty))
+        "#{filtered_data}#{combined}\n"
       end
     end
   end
