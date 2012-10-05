@@ -21,7 +21,6 @@ h3 {
     color: black
   }
 }
-
 @media (max-width: 480px) {
   h2 {
     color: blue
