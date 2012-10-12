@@ -1,8 +1,12 @@
 # Sprockets::MediaQueryCombiner
 
 Combines all matching media queries while compiling your assets with
-sprockets/Rails asset pipeline. For example:
+sprockets/Rails asset pipeline.
 
+If you're not using
+Rails 3.1+ or Sprockets, you should use [sass-media_query_combiner](https://github.com/aaronjensen/sass-media_query_combiner)
+
+For example:
 ```css
 h3 {
   color: orange
