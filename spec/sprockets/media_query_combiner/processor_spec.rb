@@ -3,7 +3,7 @@ require 'sprockets/media_query_combiner/processor'
 
 module Sprockets::MediaQueryCombiner
   describe Processor do
-    it "should with pretty css" do
+    it "should work with pretty css" do
       combiner = Processor.new do
 <<CSS
 h3 {
