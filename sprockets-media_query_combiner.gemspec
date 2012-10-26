@@ -15,6 +15,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Sprockets::MediaQueryCombiner::VERSION
 
+  gem.required_ruby_version = '>= 1.9.2'
+
   gem.add_runtime_dependency "sprockets", "~>2.1.3"
 
   gem.add_development_dependency "rspec"

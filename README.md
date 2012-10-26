@@ -60,6 +60,8 @@ randomly throughout your file.
 
 ## Installation
 
+Requires Ruby >= 1.9.2.
+
 Add this line to your application's Gemfile:
 
     gem 'sprockets-media_query_combiner'
