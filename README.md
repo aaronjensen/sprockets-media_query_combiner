@@ -1,6 +1,7 @@
 # Sprockets::MediaQueryCombiner
 
 [![Gem Version](https://badge.fury.io/rb/sprockets-media_query_combiner.png)](http://badge.fury.io/rb/sprockets-media_query_combiner)
+[![Build Status](https://travis-ci.org/aaronjensen/sprockets-media_query_combiner.png)](https://travis-ci.org/aaronjensen/sprockets-media_query_combiner)
 
 Combines all matching media queries while compiling your assets with
 sprockets/Rails asset pipeline.
