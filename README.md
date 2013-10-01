@@ -96,3 +96,7 @@ register_bundle_processor 'text/css', Sprockets::MediaQueryCombiner::Processor
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aaronjensen/sprockets-media_query_combiner/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
