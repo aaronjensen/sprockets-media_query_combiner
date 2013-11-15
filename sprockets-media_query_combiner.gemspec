@@ -7,6 +7,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Automatically combine media queries}
   gem.description   = %q{Sprockets bundle processor to combine all like media queries}
   gem.homepage      = ""
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
