@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.9.2'
 
-  gem.add_runtime_dependency "sprockets", ">= 2.1"
+  gem.add_runtime_dependency "sprockets", "~>2.1"
   gem.add_runtime_dependency "sass-media_query_combiner", "~>0.0.4"
 
   gem.add_development_dependency "rspec"
